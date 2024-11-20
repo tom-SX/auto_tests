@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['imagecompression_298',['ImageCompression',['../namespacesightx_1_1sdk.html#a73617026c7e93720b9e427c9b2cf5755',1,'sightx::sdk']]],
+  ['in_299',['In',['../structsightx_1_1sdk_1_1EdgeInfo.html#a5738cbcd5d554a18d8bc1302c78deda9',1,'sightx::sdk::EdgeInfo']]],
+  ['info_300',['Info',['../namespacesightx_1_1sdk.html#ad6da1f54f8f0b277a041add86dbd1015a4059b0251f66a18cb56f544728796875',1,'sightx::sdk']]],
+  ['init_301',['init',['../structsightx_1_1sdk_1_1Logger.html#ade5a6634de47ae65cab785ea23cdbb8a',1,'sightx::sdk::Logger']]],
+  ['inputs_302',['Inputs',['../structsightx_1_1sdk_1_1ModuleInfo.html#af8ca279cf0c3fec2acef543c2dfda091',1,'sightx::sdk::ModuleInfo']]],
+  ['insertattributegroups_303',['insertAttributeGroups',['../classsightx_1_1sdk_1_1DetectorStartStreamConfiguration_1_1Groups.html#a337c33b9579f8338c6b7d9c31b85f325',1,'sightx::sdk::DetectorStartStreamConfiguration::Groups::insertAttributeGroups()'],['../classsightx_1_1sdk_1_1DetectorUpdateStreamConfiguration_1_1Groups.html#a295c9d6c2db46a36ec560ad034ab65ae',1,'sightx::sdk::DetectorUpdateStreamConfiguration::Groups::insertAttributeGroups()']]],
+  ['insertattributes_304',['insertAttributes',['../classsightx_1_1sdk_1_1DetectorStartStreamConfiguration_1_1Groups_1_1AttributeGroups.html#aa05df091c44a2e4e1e5a958835a471eb',1,'sightx::sdk::DetectorStartStreamConfiguration::Groups::AttributeGroups::insertAttributes()'],['../classsightx_1_1sdk_1_1DetectorUpdateStreamConfiguration_1_1Groups_1_1AttributeGroups.html#a017bee62fddbb70af6f06110ed90ee9d',1,'sightx::sdk::DetectorUpdateStreamConfiguration::Groups::AttributeGroups::insertAttributes()']]],
+  ['insertboundingboxes_305',['insertBoundingBoxes',['../classsightx_1_1sdk_1_1CvMetadataRendererStartStreamConfiguration.html#a4da419f2298dd977f872906efcc3835d',1,'sightx::sdk::CvMetadataRendererStartStreamConfiguration::insertBoundingBoxes()'],['../classsightx_1_1sdk_1_1CvMetadataRendererUpdateStreamConfiguration.html#ab835a3fb88d2b7aed30b44d818874c69',1,'sightx::sdk::CvMetadataRendererUpdateStreamConfiguration::insertBoundingBoxes()']]],
+  ['insertgroups_306',['insertGroups',['../classsightx_1_1sdk_1_1DetectorStartStreamConfiguration.html#ad338a977a02c97f4971a889fe5cfe30d',1,'sightx::sdk::DetectorStartStreamConfiguration::insertGroups()'],['../classsightx_1_1sdk_1_1DetectorUpdateStreamConfiguration.html#ab36f82041822ebc492f88531094b4546',1,'sightx::sdk::DetectorUpdateStreamConfiguration::insertGroups()']]],
+  ['insertscorethresholds_307',['insertScoreThresholds',['../classsightx_1_1sdk_1_1ClassifierStartStreamConfiguration.html#ae850b8ce185ba0a9a8c99aed2f064b4e',1,'sightx::sdk::ClassifierStartStreamConfiguration::insertScoreThresholds()'],['../classsightx_1_1sdk_1_1ClassifierUpdateStreamConfiguration.html#ab61a095b61e70951085cfcd417e0afe6',1,'sightx::sdk::ClassifierUpdateStreamConfiguration::insertScoreThresholds()']]],
+  ['invalidversion_308',['InvalidVersion',['../namespacesightx_1_1sdk.html#a2eb9f1db6c34ebde42e4cd0d4dba72cba47ff03d2239a69112904305444be2fc0',1,'sightx::sdk']]],
+  ['ip_309',['IP',['../structsightx_1_1sdk_1_1ServerInfo.html#a6efbcb445557a83fc406f45c7ae010eb',1,'sightx::sdk::ServerInfo']]],
+  ['iswrapped_310',['isWrapped',['../classsightx_1_1sdk_1_1Stream.html#a1b9894f48898594242f574ea79f7240c',1,'sightx::sdk::Stream']]],
+  ['iyuv_311',['IYUV',['../namespacesightx_1_1sdk.html#a4ad723712edb22837accf5f005f8374eab08f0cb36474118c5bbc03b3a172a778',1,'sightx::sdk']]]
+];

@@ -1,0 +1,15 @@
+[
+	{
+		"failures" : 
+		[
+			{
+				"actual_value" : "",
+				"description" : "C++ exception with description \"Server error: Module with alias preview_module not registered\" thrown in the test body.\n",
+				"expected_value" : ""
+			}
+		],
+		"name" : "PreviewModuleTest",
+		"status" : "FAILED",
+		"test" : "Update_PreviewModule_EnableRandom"
+	}
+]

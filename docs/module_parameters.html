@@ -1,0 +1,3468 @@
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #FFF;
+}
+
+th {
+    background-color: #8900FD;
+}
+
+.EnumTable {
+    width: 30%;
+}
+
+.DetectorInfoTable {
+    width: 50%;
+}
+
+.ObjectTable {
+    width: 100%;
+}
+
+</style>
+
+<h1>Merlin 0.13.0-rc.0 (218a9c0/aa20a9e8)</h1>
+<img src="pipeline_graph.png" style="width:50%">
+<h2>Enumerations</h2>
+<table class="EnumTable">
+    <tr>
+        <th rowspan="1" colspan="1">Name</th>
+        <th rowspan="1" colspan="1">Values</th>
+    </tr>
+
+    <tr>
+        <td rowspan="19" colspan="1">ColorMap</td>
+        <td rowspan="1" colspan="1">Bone</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Jet</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Winter</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Rainbow</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Ocean</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Summer</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Spring</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Cool</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Hsv</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Pink</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Hot</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Parula</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Magma</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Inferno</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Plasma</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Viridis</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Cividis</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Twilight</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">TwilightShifted</td>
+    </tr>
+
+    <tr>
+        <td rowspan="4" colspan="1">Corner</td>
+        <td rowspan="1" colspan="1">TopLeft</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">TopRight</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">BottomLeft</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">BottomRight</td>
+    </tr>
+
+    <tr>
+        <td rowspan="16" colspan="1">DataType</td>
+        <td rowspan="1" colspan="1">RawFrame</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">PreprocessedFrame</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Homography</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Detections</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Crops</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Tracks</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Features</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Landmarks</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">MetadataFrame</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">GraphData</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">DetectorRoi</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">PreprocessorInfo</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">DetectorInfo</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">PerFrameMetadata</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">CustomMetadata</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">DebugMetadata</td>
+    </tr>
+
+    <tr>
+        <td rowspan="3" colspan="1">DeviceAccess</td>
+        <td rowspan="1" colspan="1">ReadOnly</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Control</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Exclusive</td>
+    </tr>
+
+    <tr>
+        <td rowspan="3" colspan="1">FlowSwitcherFlowId</td>
+        <td rowspan="1" colspan="1">Rgb</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Mwir</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Sot</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" colspan="1">GenicamMode</td>
+        <td rowspan="1" colspan="1">GigeVision</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Usb3Vision</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" colspan="1">KlvFormat</td>
+        <td rowspan="1" colspan="1">Disabled</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">UasVmtiLs</td>
+    </tr>
+
+    <tr>
+        <td rowspan="4" colspan="1">NormalizationType</td>
+        <td rowspan="1" colspan="1">Disabled</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">HistogramEqualization</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">LinearTransform</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">MeanStdCrop</td>
+    </tr>
+
+    <tr>
+        <td rowspan="10" colspan="1">OsdValue</td>
+        <td rowspan="1" colspan="1">Version</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">StreamId</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">InputDescription</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">FrameId</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Fps</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Pts</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Latency</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">TelemetryPlatform</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">TelemetryPayload</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">FrameRegistration</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" colspan="1">PayloadChannel</td>
+        <td rowspan="1" colspan="1">Rgb</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Ir</td>
+    </tr>
+
+    <tr>
+        <td rowspan="6" colspan="1">PayloadMode</td>
+        <td rowspan="1" colspan="1">Rate</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Bit</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Pilot</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Stow</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Park</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Center</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" colspan="1">PayloadOrientation</td>
+        <td rowspan="1" colspan="1">Horizontal</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Vertical</td>
+    </tr>
+
+    <tr>
+        <td rowspan="3" colspan="1">PayloadType</td>
+        <td rowspan="1" colspan="1">Colibri</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Static</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Xr</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">PlatformType</td>
+        <td rowspan="1" colspan="1">Static</td>
+    </tr>
+
+    <tr>
+        <td rowspan="3" colspan="1">PublisherDataType</td>
+        <td rowspan="1" colspan="1">Disabled</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Detections</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Tracks</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" colspan="1">RawSourceMode</td>
+        <td rowspan="1" colspan="1">Stream</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">SingleFrame</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" colspan="1">ReidMode</td>
+        <td rowspan="1" colspan="1">Automatic</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Manual</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" colspan="1">VideoPassthroughFlow</td>
+        <td rowspan="1" colspan="1">On</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Off</td>
+    </tr>
+
+</table>
+<h2>Detector groups/classes</h2>
+<table class="DetectorInfoTable">
+    <tr>
+        <th rowspan="1" colspan="1">Detector</th>
+        <th rowspan="1" colspan="1">Calibrated</th>
+        <th rowspan="1" colspan="1">Group</th>
+        <th rowspan="1" colspan="1">Tracker class</th>
+        <th rowspan="1" colspan="1">Classes</th>
+        <th rowspan="1" colspan="1">Attribute groups</th>
+        <th rowspan="1" colspan="1">Attribute values</th>
+    </tr>
+
+    <tr>
+        <td rowspan="2" colspan="1">GroundRgbDetector</td>
+        <td rowspan="2" colspan="1">Yes</td>
+        <td rowspan="1" colspan="1">Person</td>
+        <td rowspan="1" colspan="1">Person</td>
+        <td rowspan="1" colspan="1">Person</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Vehicle</td>
+        <td rowspan="1" colspan="1">Vehicle</td>
+        <td rowspan="1" colspan="1">Vehicle</td>
+    </tr>
+
+    <tr>
+        <td rowspan="3" colspan="1">GroundMwirDetector</td>
+        <td rowspan="3" colspan="1">Yes</td>
+        <td rowspan="1" colspan="1">Person</td>
+        <td rowspan="1" colspan="1">Person</td>
+        <td rowspan="1" colspan="1">Person</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" colspan="1">Vehicle</td>
+        <td rowspan="2" colspan="1">Vehicle</td>
+        <td rowspan="2" colspan="1">Vehicle</td>
+        <td rowspan="2" colspan="1">Type</td>
+        <td rowspan="1" colspan="1">Light</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Heavy</td>
+    </tr>
+
+</table>
+<h2>Stream RawSource configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">RawSourceMode</td>
+        <td rowspan="1" colspan="1">Mode</td>
+        <td rowspan="1" colspan="1">Stream</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">raw source mode - either stream or single frame</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">ReadTimeoutInSec</td>
+        <td rowspan="1" colspan="1">5</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">read timeout, when no data arrives for this duration - the stream closes, if 0 - no timeout</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">SingleFrameTimeoutInSec</td>
+        <td rowspan="1" colspan="1">3</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">single frame processing timeout</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Port</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">port on which the source is listening, the port is filled by the source</td>
+    </tr>
+
+</table>
+<h2>Stream GcSource configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">GenicamMode</td>
+        <td rowspan="1" colspan="1">Mode</td>
+        <td rowspan="1" colspan="1">GigeVision</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">GenICam mode - GigeVision or Usb3Vision</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">TimeoutInSec</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">timeout to wait for a frame from the camera, or 0 for infinite timeout</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">Url</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">[interface:]device[@stream] or empty for first available device</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">DeviceAccess</td>
+        <td rowspan="1" colspan="1">DeviceAccessMode</td>
+        <td rowspan="1" colspan="1">Control</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">camera access mode</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(ObjectVector)</td>
+        <td rowspan="1" colspan="1">GcParameters</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="3" colspan="1">GenICam parameters</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">GcParameters[N/A].Name</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">GcParameters[N/A].Value</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+    </tr>
+
+</table>
+<h2>Stream GstSource configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">StopOnError</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">stop stream on GStreamer error</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">Source</td>
+        <td rowspan="1" colspan="1">uridecodebin uri={}</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">source pipeline part with {} marking the url</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">Url</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">url to replace in Source string</td>
+    </tr>
+
+</table>
+<h2>Stream FramerateController configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">OutputFramerate</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">150</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">Framerate to output, if 0 - uses input framerate</td>
+    </tr>
+
+</table>
+<h2>Stream Preprocessor configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Width</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">target width or 0 to keep dimensions</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Height</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">target height or 0 to keep dimensions</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">KeepAspectRatio</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">keep aspect ratio when resizing the image</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">RotateAngle</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">270</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">an angle to rotate the frame,should be a multiple of 90 between 0 and 270</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">Roi</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="5" colspan="1">ROI to extract from the image before further processing</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.X</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.Y</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.Width</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.Height</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+</table>
+<h2>Stream VideoPassthrough configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">VideoPassthroughFlow</td>
+        <td rowspan="1" colspan="1">FlowId</td>
+        <td rowspan="1" colspan="1">Off</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">flow id reported by this flow switcher</td>
+    </tr>
+
+</table>
+<h2>Stream FrameRegisterImage configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Enable</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">true to enable frame registration</td>
+    </tr>
+
+</table>
+<h2>Stream FlowSwitcher configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">FlowSwitcherFlowId</td>
+        <td rowspan="1" colspan="1">FlowId</td>
+        <td rowspan="1" colspan="1">Rgb</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">flow id reported by this flow switcher</td>
+    </tr>
+
+</table>
+<h2>Stream LockedOnConfiguration configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">LockOnTrack</td>
+        <td rowspan="1" colspan="1">-1</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">track id to lock on</td>
+    </tr>
+
+</table>
+<h2>Stream GroundRgbDetector configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">Roi</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="5" colspan="1">ROI to extract from the image before inference</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.X</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.Y</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.Width</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.Height</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(ObjectMap)</td>
+        <td rowspan="1" colspan="1">Groups</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="19" colspan="1">groups with bounding boxes limits; group names should match those in global settings</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].ScoreThreshold</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MinWidth</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MaxWidth</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MinHeight</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MaxHeight</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MinAspectRatio</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MaxAspectRatio</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(ObjectMap)</td>
+        <td rowspan="1" colspan="1">Groups["Person"].AttributeGroups</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].AttributeGroups["N/A"].Attributes["N/A"]</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].ScoreThreshold</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MinWidth</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MaxWidth</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MinHeight</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MaxHeight</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MinAspectRatio</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MaxAspectRatio</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(ObjectMap)</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].AttributeGroups</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].AttributeGroups["N/A"].Attributes["N/A"]</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">double</td>
+        <td rowspan="1" colspan="1">AveragePixelValue[N/A]</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">override for model mean</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">double</td>
+        <td rowspan="1" colspan="1">PixelValueStandardDeviation[N/A]</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">override for model std</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">MaxDetections</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">maximum detections to output per frame</td>
+    </tr>
+
+</table>
+<h2>Stream GroundMwirDetector configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">Roi</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="5" colspan="1">ROI to extract from the image before inference</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.X</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.Y</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.Width</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Roi.Height</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(ObjectMap)</td>
+        <td rowspan="1" colspan="1">Groups</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="19" colspan="1">groups with bounding boxes limits; group names should match those in global settings</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].ScoreThreshold</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MinWidth</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MaxWidth</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MinHeight</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MaxHeight</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MinAspectRatio</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].MaxAspectRatio</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(ObjectMap)</td>
+        <td rowspan="1" colspan="1">Groups["Person"].AttributeGroups</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Person"].AttributeGroups["N/A"].Attributes["N/A"]</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].ScoreThreshold</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MinWidth</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MaxWidth</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MinHeight</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MaxHeight</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MinAspectRatio</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].MaxAspectRatio</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(ObjectMap)</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].AttributeGroups</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Groups["Vehicle"].AttributeGroups["Type"].Attributes["N/A"]</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">double</td>
+        <td rowspan="1" colspan="1">AveragePixelValue[N/A]</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">override for model mean</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">double</td>
+        <td rowspan="1" colspan="1">PixelValueStandardDeviation[N/A]</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">override for model std</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">MaxDetections</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">maximum detections to output per frame</td>
+    </tr>
+
+</table>
+<h2>Stream Vmd configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Enable</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">true to enable VMD</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">ScoreThreshold</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">detections with score below this threshold will be skipped</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">MinWidth</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">min detection width to produce</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">MaxWidth</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">max detection width to produce</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">MinHeight</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">min detection height to produce</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">MaxHeight</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">max detection height to produce</td>
+    </tr>
+
+</table>
+<h2>Stream GroundRgbPersonClassifier configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Enable</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">true to enable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">AdjustCropInPercentsOverride</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="3" colspan="1">expand/shrink the crop in percents</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">AdjustCropInPercentsOverride.Width</td>
+        <td rowspan="1" colspan="1">-1001</td>
+        <td rowspan="1" colspan="1">-1001</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">AdjustCropInPercentsOverride.Height</td>
+        <td rowspan="1" colspan="1">-1001</td>
+        <td rowspan="1" colspan="1">-1001</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">Filter</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="8" colspan="1">detections/crops filters</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.ScoreThreshold</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MinWidth</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MaxWidth</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MinHeight</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MaxHeight</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MinAspectRatio</td>
+        <td rowspan="1" colspan="1">0.01</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MaxAspectRatio</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">ScoreThresholds["N/A"]</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">per-class score thresholds</td>
+    </tr>
+
+</table>
+<h2>Stream GroundRgbVehicleClassifier configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Enable</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">true to enable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">AdjustCropInPercentsOverride</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="3" colspan="1">expand/shrink the crop in percents</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">AdjustCropInPercentsOverride.Width</td>
+        <td rowspan="1" colspan="1">-1001</td>
+        <td rowspan="1" colspan="1">-1001</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">AdjustCropInPercentsOverride.Height</td>
+        <td rowspan="1" colspan="1">-1001</td>
+        <td rowspan="1" colspan="1">-1001</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">Filter</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="8" colspan="1">detections/crops filters</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.ScoreThreshold</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MinWidth</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MaxWidth</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MinHeight</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MaxHeight</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MinAspectRatio</td>
+        <td rowspan="1" colspan="1">0.01</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Filter.MaxAspectRatio</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">ScoreThresholds["N/A"]</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">per-class score thresholds</td>
+    </tr>
+
+</table>
+<h2>Stream SingleObjectTracker configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Enable</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">true to enable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">double</td>
+        <td rowspan="1" colspan="1">UpdateScoreThreshold</td>
+        <td rowspan="1" colspan="1">0.9</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">track udpate score threshold</td>
+    </tr>
+
+</table>
+<h2>Stream TrackerRate configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">OutputFramerate</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">150</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">Framerate to output, if 0 - uses input framerate</td>
+    </tr>
+
+</table>
+<h2>Stream PersonTracker configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Enable</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">true to enable tracker functionality</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">MaxTimeSinceUpdateToReportMs</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">60000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">report tracks that were updated at most MaxTimeSinceUpdateToReportMs ms ago; when MaxTimeSinceUpdateToReportMs is 0 - only assigned tracks are reported</td>
+    </tr>
+
+</table>
+<h2>Stream VehicleTracker configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Enable</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">true to enable tracker functionality</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">MaxTimeSinceUpdateToReportMs</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">60000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">report tracks that were updated at most MaxTimeSinceUpdateToReportMs ms ago; when MaxTimeSinceUpdateToReportMs is 0 - only assigned tracks are reported</td>
+    </tr>
+
+</table>
+<h2>Stream VmdTracker configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Enable</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">true to enable tracker functionality</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">MaxTimeSinceUpdateToReportMs</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">60000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">report tracks that were updated at most MaxTimeSinceUpdateToReportMs ms ago; when MaxTimeSinceUpdateToReportMs is 0 - only assigned tracks are reported</td>
+    </tr>
+
+</table>
+<h2>Stream TrackerPostprocessor configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">OutputFilter[0]</td>
+        <td rowspan="1" colspan="1">*</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">string in form 'class' or 'class/*' or 'class/attribute' to output'class' - filter specified class with any attribute'class/*' - filter specified class with undefined attribute'class/attribute' - filter specified class with specified attribute</td>
+    </tr>
+
+</table>
+<h2>Stream RgbReid configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Enable</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">true to enable ReID</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">ReidMode</td>
+        <td rowspan="1" colspan="1">Mode</td>
+        <td rowspan="1" colspan="1">Automatic</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">mode of the ReID module</td>
+    </tr>
+
+</table>
+<h2>Stream TracksPublisher configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">PublisherDataType</td>
+        <td rowspan="1" colspan="1">SourceData</td>
+        <td rowspan="1" colspan="1">Tracks</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">input data to send</td>
+    </tr>
+
+</table>
+<h2>Stream VehicleTelemetry configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">SamplingFrequencyMs</td>
+        <td rowspan="1" colspan="1">30</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">10000</td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">frequency to sample vehicle telemetry</td>
+    </tr>
+
+</table>
+<h2>Stream CefRenderer configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">TargetWidth</td>
+        <td rowspan="1" colspan="1">1280</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">width of target image</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">TargetHeight</td>
+        <td rowspan="1" colspan="1">720</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">height of target image</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BrowserFrameRate</td>
+        <td rowspan="1" colspan="1">30</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">60</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">browser frame rate</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">Normalization</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="5" colspan="1">grayscale image normalization parameters</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">NormalizationType</td>
+        <td rowspan="1" colspan="1">Normalization.Type</td>
+        <td rowspan="1" colspan="1">MeanStdCrop</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">double</td>
+        <td rowspan="1" colspan="1">Normalization.Alpha</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">0.01</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">double</td>
+        <td rowspan="1" colspan="1">Normalization.Beta</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">65535</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">double</td>
+        <td rowspan="1" colspan="1">Normalization.StdCropSize</td>
+        <td rowspan="1" colspan="1">2</td>
+        <td rowspan="1" colspan="1">0.01</td>
+        <td rowspan="1" colspan="1">5</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+</table>
+<h2>Stream CvRenderer configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">TargetWidth</td>
+        <td rowspan="1" colspan="1">1280</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">width of target image, if 0 - PreprocessedFrame dimensions are used</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">TargetHeight</td>
+        <td rowspan="1" colspan="1">720</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">8192</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">height of target image, if 0 - PreprocessedFrame dimensions are used</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">SkipAllRendering</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">if true - nothing will be rendered, but the frame will still be resized and copied forth</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">Normalization</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="5" colspan="1">grayscale image normalization parameters</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">NormalizationType</td>
+        <td rowspan="1" colspan="1">Normalization.Type</td>
+        <td rowspan="1" colspan="1">MeanStdCrop</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">double</td>
+        <td rowspan="1" colspan="1">Normalization.Alpha</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">0.01</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">double</td>
+        <td rowspan="1" colspan="1">Normalization.Beta</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">65535</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">double</td>
+        <td rowspan="1" colspan="1">Normalization.StdCropSize</td>
+        <td rowspan="1" colspan="1">2</td>
+        <td rowspan="1" colspan="1">0.01</td>
+        <td rowspan="1" colspan="1">5</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">DrawDetections</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">draw detections bounding boxes</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">DrawTracks</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">draw tracks bounding boxes</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">MarkPredictedTracks</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">mark predicted tracks with a different color</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">PrintClass</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">print detection class</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">PrintScore</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">print detection score</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">PrintTrackId</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">print track id</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">ColorTrack</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">map track ids to bounding boxes colors</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">DrawTrackVelocity</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">draw an arrow in the direction of tracked object velocity</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">TrackVelocityFactor</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">velocity arrow scale factor</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">PrintDistance</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">print estimated object distance</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">PrintAttributes</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">print detection attributes</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">PrintReidStatus</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">print reid status</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">DrawCenterOfMass</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">draw center of the bounding box</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">CenterOfMassRadius</td>
+        <td rowspan="1" colspan="1">3</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">radius of the circle marking the center of mass</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">ReidHotCold</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="6" colspan="1">reid hot cold configuration</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">ReidHotCold.SkipRendering</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">ReidHotCold.PrintScore</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">ReidHotCold.ColorLineThickness</td>
+        <td rowspan="1" colspan="1">2</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">ReidHotCold.ColorLineDistance</td>
+        <td rowspan="1" colspan="1">3</td>
+        <td rowspan="1" colspan="1">-101</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">ColorMap</td>
+        <td rowspan="1" colspan="1">ReidHotCold.ColorMap</td>
+        <td rowspan="1" colspan="1">Viridis</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">Cross</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="5" colspan="1">cross in the center of the frame</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Cross.SkipRendering</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Cross.Color</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Cross.SizeInPercents</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Cross.Thickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">DetectorRoi</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="7" colspan="1">detector ROI settings</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">DetectorRoi.SkipRendering</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">DetectorRoi.Color</td>
+        <td rowspan="1" colspan="1">16776960</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">DetectorRoi.LineThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">DetectorRoi.HideOutside</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(ObjectMap)</td>
+        <td rowspan="1" colspan="1">BoundingBoxes</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="55" colspan="1">bounding boxes rendering settings</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">BoundingBoxes[""].SkipRendering</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes[""].BoxColor</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes[""].LineThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes[""].TextOffsetX</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes[""].TextOffsetY</td>
+        <td rowspan="1" colspan="1">-8</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes[""].BottomTextOffsetY</td>
+        <td rowspan="1" colspan="1">15</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes[""].FontColor</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">BoundingBoxes[""].FontScale</td>
+        <td rowspan="1" colspan="1">0.5</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes[""].FontThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Person"].SkipRendering</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Person"].BoxColor</td>
+        <td rowspan="1" colspan="1">16711680</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Person"].LineThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Person"].TextOffsetX</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Person"].TextOffsetY</td>
+        <td rowspan="1" colspan="1">-8</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Person"].BottomTextOffsetY</td>
+        <td rowspan="1" colspan="1">15</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Person"].FontColor</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Person"].FontScale</td>
+        <td rowspan="1" colspan="1">0.5</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Person"].FontThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle"].SkipRendering</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle"].BoxColor</td>
+        <td rowspan="1" colspan="1">16744448</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle"].LineThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle"].TextOffsetX</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle"].TextOffsetY</td>
+        <td rowspan="1" colspan="1">-8</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle"].BottomTextOffsetY</td>
+        <td rowspan="1" colspan="1">15</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle"].FontColor</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle"].FontScale</td>
+        <td rowspan="1" colspan="1">0.5</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle"].FontThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/heavy"].SkipRendering</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/heavy"].BoxColor</td>
+        <td rowspan="1" colspan="1">16744448</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/heavy"].LineThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/heavy"].TextOffsetX</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/heavy"].TextOffsetY</td>
+        <td rowspan="1" colspan="1">-8</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/heavy"].BottomTextOffsetY</td>
+        <td rowspan="1" colspan="1">15</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/heavy"].FontColor</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/heavy"].FontScale</td>
+        <td rowspan="1" colspan="1">0.5</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/heavy"].FontThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["TwoWheeled"].SkipRendering</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["TwoWheeled"].BoxColor</td>
+        <td rowspan="1" colspan="1">16711935</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["TwoWheeled"].LineThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["TwoWheeled"].TextOffsetX</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["TwoWheeled"].TextOffsetY</td>
+        <td rowspan="1" colspan="1">-8</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["TwoWheeled"].BottomTextOffsetY</td>
+        <td rowspan="1" colspan="1">15</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["TwoWheeled"].FontColor</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["TwoWheeled"].FontScale</td>
+        <td rowspan="1" colspan="1">0.5</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["TwoWheeled"].FontThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/light"].SkipRendering</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/light"].BoxColor</td>
+        <td rowspan="1" colspan="1">9127187</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/light"].LineThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/light"].TextOffsetX</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/light"].TextOffsetY</td>
+        <td rowspan="1" colspan="1">-8</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/light"].BottomTextOffsetY</td>
+        <td rowspan="1" colspan="1">15</td>
+        <td rowspan="1" colspan="1">-1000</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/light"].FontColor</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/light"].FontScale</td>
+        <td rowspan="1" colspan="1">0.5</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">BoundingBoxes["Vehicle/light"].FontThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">Osd</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="21" colspan="1">OSD rendering settings</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Osd.SkipRendering</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Corner</td>
+        <td rowspan="1" colspan="1">Osd.Corner</td>
+        <td rowspan="1" colspan="1">TopLeft</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">OsdValue</td>
+        <td rowspan="1" colspan="1">Osd.Values[0]</td>
+        <td rowspan="1" colspan="1">Version</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">OsdValue</td>
+        <td rowspan="1" colspan="1">Osd.Values[1]</td>
+        <td rowspan="1" colspan="1">StreamId</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">OsdValue</td>
+        <td rowspan="1" colspan="1">Osd.Values[2]</td>
+        <td rowspan="1" colspan="1">InputDescription</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">OsdValue</td>
+        <td rowspan="1" colspan="1">Osd.Values[3]</td>
+        <td rowspan="1" colspan="1">FrameId</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">OsdValue</td>
+        <td rowspan="1" colspan="1">Osd.Values[4]</td>
+        <td rowspan="1" colspan="1">Pts</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">OsdValue</td>
+        <td rowspan="1" colspan="1">Osd.Values[5]</td>
+        <td rowspan="1" colspan="1">Fps</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">OsdValue</td>
+        <td rowspan="1" colspan="1">Osd.Values[6]</td>
+        <td rowspan="1" colspan="1">Latency</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">OsdValue</td>
+        <td rowspan="1" colspan="1">Osd.Values[7]</td>
+        <td rowspan="1" colspan="1">TelemetryPlatform</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">OsdValue</td>
+        <td rowspan="1" colspan="1">Osd.Values[8]</td>
+        <td rowspan="1" colspan="1">TelemetryPayload</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">OsdValue</td>
+        <td rowspan="1" colspan="1">Osd.Values[9]</td>
+        <td rowspan="1" colspan="1">FrameRegistration</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Osd.MarginX</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Osd.MarginY</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Osd.LineDistance</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Osd.BackColor</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Osd.BackTransparency</td>
+        <td rowspan="1" colspan="1">0.7</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Osd.FontColor</td>
+        <td rowspan="1" colspan="1">16711935</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Osd.FontScale</td>
+        <td rowspan="1" colspan="1">0.5</td>
+        <td rowspan="1" colspan="1">0.1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Osd.FontThickness</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(Object)</td>
+        <td rowspan="1" colspan="1">Histogram</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="12" colspan="1">histogram rendering settings; only used with grayscale images</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Histogram.SkipRendering</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">Corner</td>
+        <td rowspan="1" colspan="1">Histogram.Corner</td>
+        <td rowspan="1" colspan="1">BottomLeft</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Histogram.MarginX</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Histogram.MarginY</td>
+        <td rowspan="1" colspan="1">10</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">Histogram.Bins</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">5</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Histogram.Width</td>
+        <td rowspan="1" colspan="1">300</td>
+        <td rowspan="1" colspan="1">50</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Histogram.Height</td>
+        <td rowspan="1" colspan="1">200</td>
+        <td rowspan="1" colspan="1">50</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Histogram.BackColor</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">float</td>
+        <td rowspan="1" colspan="1">Histogram.BackTransparency</td>
+        <td rowspan="1" colspan="1">0.7</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Histogram.ColorBefore</td>
+        <td rowspan="1" colspan="1">16776960</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">Histogram.ColorAfter</td>
+        <td rowspan="1" colspan="1">65280</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">16777215</td>
+        <td rowspan="1" colspan="1">Updatable</td>
+    </tr>
+
+</table>
+<h2>Stream PreviewModule configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Enable</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">true to enable stream preview</td>
+    </tr>
+
+</table>
+<h2>Stream GstSink configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">StopOnError</td>
+        <td rowspan="1" colspan="1">true</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">stop stream on GStreamer error</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">Sink</td>
+        <td rowspan="1" colspan="1">rtspclientsink location={}</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">sink pipeline part with '{}' marking the url, can be 'websocketserversink' for web socket mode</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">Url</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">url to replace in the Sink string</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">FrameRate</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">0</td>
+        <td rowspan="1" colspan="1">100</td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">target frame rate, 0 to use input framerate</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">KlvFormat</td>
+        <td rowspan="1" colspan="1">KlvFormat</td>
+        <td rowspan="1" colspan="1">Disabled</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">klv format to output; pipeline has to have an 'appsrc' with 'meta/x-klv' caps defined to output klv data</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">WebSocketPort</td>
+        <td rowspan="1" colspan="1">8181</td>
+        <td rowspan="1" colspan="1">1024</td>
+        <td rowspan="1" colspan="1">65535</td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">WebSocket port to listen on</td>
+    </tr>
+
+</table>
+<h2>Stream Recorder configuration</h2>
+<table class="ObjectTable">
+    <tr>
+        <th rowspan="1" colspan="1">Type</th>
+        <th rowspan="1" colspan="1">SDK name</th>
+        <th rowspan="1" colspan="1">Default value</th>
+        <th rowspan="1" colspan="1">Min allowed value</th>
+        <th rowspan="1" colspan="1">Max allowed value</th>
+        <th rowspan="1" colspan="1">Updatable</th>
+        <th rowspan="1" colspan="1">Description</th>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">Enable</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Updatable</td>
+        <td rowspan="1" colspan="1">enable debug module functionality</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">bool</td>
+        <td rowspan="1" colspan="1">UseOriginalFrameIds</td>
+        <td rowspan="1" colspan="1">false</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">if true - use stream's frame ids, else use sequential frame ids</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">(ObjectVector)</td>
+        <td rowspan="1" colspan="1">Store</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="7" colspan="1">parts of container to store</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">DataType</td>
+        <td rowspan="1" colspan="1">Store[0].DataType</td>
+        <td rowspan="1" colspan="1">RawFrame</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">Store[0].Tag</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">Store[0].Path</td>
+        <td rowspan="1" colspan="1">raw_frames/</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">DataType</td>
+        <td rowspan="1" colspan="1">Store[1].DataType</td>
+        <td rowspan="1" colspan="1">PerFrameMetadata</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">Store[1].Tag</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">Store[1].Path</td>
+        <td rowspan="1" colspan="1">telemetry.csv</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">SkipFrames</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1</td>
+        <td rowspan="1" colspan="1">1000</td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">how many frames to skip while recording</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">PathPrefix</td>
+        <td rowspan="1" colspan="1">sightx_recorder</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">prefix for all paths</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">FrameFileType</td>
+        <td rowspan="1" colspan="1">png</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">image file type to use while storing frames</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">std::string</td>
+        <td rowspan="1" colspan="1">VideoFourCc</td>
+        <td rowspan="1" colspan="1">MPEG</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">video fourcc</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">int32_t</td>
+        <td rowspan="1" colspan="1">Quality</td>
+        <td rowspan="1" colspan="1">-1</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">if not -1 - video/jpeg quality in percents to pass to VideoWriter or to imwrite</td>
+    </tr>
+
+    <tr>
+        <td rowspan="1" colspan="1">uint32_t</td>
+        <td rowspan="1" colspan="1">VideoFps</td>
+        <td rowspan="1" colspan="1">25</td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1"></td>
+        <td rowspan="1" colspan="1">Not updatable</td>
+        <td rowspan="1" colspan="1">FPS to use when storing frames as video</td>
+    </tr>
+
+</table>

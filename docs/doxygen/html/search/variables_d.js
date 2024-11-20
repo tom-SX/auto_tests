@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['pinnedcpumemoryallocation_1549',['PinnedCpuMemoryAllocation',['../structsightx_1_1sdk_1_1PipelineInfo.html#a2ea873d84f02b5ee680e13fd32148b0f',1,'sightx::sdk::PipelineInfo']]],
+  ['pipelinecpuload_1550',['PipelineCpuLoad',['../structsightx_1_1sdk_1_1UtilizationRates.html#aeff83ea12f23099f7e876bbd4eb467cc',1,'sightx::sdk::UtilizationRates']]],
+  ['pipelineresidentmemorybytes_1551',['PipelineResidentMemoryBytes',['../structsightx_1_1sdk_1_1UtilizationRates.html#aa53d32636b24149bf9060460e4e98960',1,'sightx::sdk::UtilizationRates']]],
+  ['pipelinevirtualmemorybytes_1552',['PipelineVirtualMemoryBytes',['../structsightx_1_1sdk_1_1UtilizationRates.html#a4f429cd7ddb1b0256bbad43da2086868',1,'sightx::sdk::UtilizationRates']]],
+  ['platformaltitudemeters_1553',['PlatformAltitudeMeters',['../structsightx_1_1sdk_1_1FrameResults.html#af35fa930469afa73db4e42f8c6543601',1,'sightx::sdk::FrameResults::PlatformAltitudeMeters()'],['../structsightx_1_1sdk_1_1TelemetryInfo.html#a9a0b5e08d74d8f7ccb8d5a19bb36d8df',1,'sightx::sdk::TelemetryInfo::PlatformAltitudeMeters()']]],
+  ['platformlatitudedegrees_1554',['PlatformLatitudeDegrees',['../structsightx_1_1sdk_1_1FrameResults.html#a8dd4ca0a30840393b82387294a62a19d',1,'sightx::sdk::FrameResults::PlatformLatitudeDegrees()'],['../structsightx_1_1sdk_1_1TelemetryInfo.html#afe9b06db876a50268a14e9cbfad9da1b',1,'sightx::sdk::TelemetryInfo::PlatformLatitudeDegrees()']]],
+  ['platformlongitudedegrees_1555',['PlatformLongitudeDegrees',['../structsightx_1_1sdk_1_1FrameResults.html#a1673036af9372c158c5d8f73bbe7c3c7',1,'sightx::sdk::FrameResults::PlatformLongitudeDegrees()'],['../structsightx_1_1sdk_1_1TelemetryInfo.html#a9209686112c9a03e4b9f859bd79f2695',1,'sightx::sdk::TelemetryInfo::PlatformLongitudeDegrees()']]],
+  ['platformpitchworldmrads_1556',['PlatformPitchWorldMrads',['../structsightx_1_1sdk_1_1TelemetryInfo.html#a8903154414ee7e2d7c84bc3455f71a62',1,'sightx::sdk::TelemetryInfo']]],
+  ['platformrollworldmrads_1557',['PlatformRollWorldMrads',['../structsightx_1_1sdk_1_1TelemetryInfo.html#a76bc7d8eb6c50cfb811459216ec83d50',1,'sightx::sdk::TelemetryInfo']]],
+  ['platformyawworldmrads_1558',['PlatformYawWorldMrads',['../structsightx_1_1sdk_1_1TelemetryInfo.html#a2f803bac09c0ba26ef23ecd3b6e9c627',1,'sightx::sdk::TelemetryInfo']]],
+  ['port_1559',['Port',['../structsightx_1_1sdk_1_1ServerInfo.html#ab1438e89b951bf5c4eace3d160fedf32',1,'sightx::sdk::ServerInfo::Port()'],['../structsightx_1_1sdk_1_1GrpcSettings.html#ac1b09089b86d6e01066452adca8389ea',1,'sightx::sdk::GrpcSettings::Port()']]],
+  ['position_1560',['Position',['../structsightx_1_1sdk_1_1Crop.html#aa577ae89968b323fbf90ab40d90ab416',1,'sightx::sdk::Crop']]],
+  ['processedframes_1561',['ProcessedFrames',['../structsightx_1_1sdk_1_1StreamInfo.html#a38890d6001ae961d18fb63bf02b3c807',1,'sightx::sdk::StreamInfo']]],
+  ['processingtimems_1562',['ProcessingTimeMs',['../structsightx_1_1sdk_1_1ModuleInfo.html#a26b074838c0e15aa3861212cc8acdae4',1,'sightx::sdk::ModuleInfo']]],
+  ['project_1563',['Project',['../structsightx_1_1sdk_1_1ServerInfo.html#a2b16de64565f1e73ca69535507a9f32b',1,'sightx::sdk::ServerInfo']]],
+  ['pts_1564',['PTS',['../structsightx_1_1sdk_1_1StreamInfo.html#a3a0a9563ea85e1090fc0579ac3096dd7',1,'sightx::sdk::StreamInfo']]]
+];

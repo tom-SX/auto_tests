@@ -1,0 +1,3 @@
+/home/tom/Desktop/tom/auto_tests/build/CMakeFiles/rebuild_cache.dir
+/home/tom/Desktop/tom/auto_tests/build/CMakeFiles/edit_cache.dir
+/home/tom/Desktop/tom/auto_tests/build/CMakeFiles/sdk_sample_raw_frames.dir
